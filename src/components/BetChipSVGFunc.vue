@@ -96,13 +96,14 @@ export default {
   animation: scale-outer 6s linear infinite;
   transform-origin: 50% 50%;
   transform: scale(0.35);
+  will-change: transform, opacity;
 }
 .ellipse-outer-mask {
   transform-box: fill-box;
   animation: scale-outer-mask 6s linear infinite;
   transform-origin: 50% 50%;
   transform: scale(0.35);
-  will-change: transform, opacity;
+  will-change: transform;
 }
 @keyframes scale-outer {
   0% {
@@ -148,6 +149,7 @@ export default {
   animation: scale-inner-mask 6s linear infinite;
   transform-origin: 50% 50%;
   transform: scale(0.35);
+  will-change: transform;
 }
 @keyframes scale-inner {
   0% {

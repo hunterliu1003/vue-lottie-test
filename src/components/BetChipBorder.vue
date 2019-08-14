@@ -6,6 +6,7 @@
 
 <script>
 import lottie from "lottie-web";
+import BetChip from "@/assets/bet_chip_0812.json";
 export default {
   mounted() {
     let anim = lottie.loadAnimation({
@@ -13,7 +14,7 @@ export default {
       renderer: "svg",
       loop: false,
       autoplay: true,
-      path: "/bet_chip_0812.json"
+      animationData: BetChip
     });
     anim.addEventListener("complete", function() {
       setTimeout(function() {

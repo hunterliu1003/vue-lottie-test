@@ -107,7 +107,7 @@ export default {
       this.borderCount = 0;
       this.ellipseCount = 0;
       this.svgCount = 0;
-      this.svgCountFunc = 0;
+      this.svgFuncCount = 0;
       this.allCount = 0;
     }
   }

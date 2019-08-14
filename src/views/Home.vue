@@ -79,6 +79,7 @@ export default {
   }),
   methods: {
     setAll() {
+      this.reset();
       this.allInterval = setInterval(() => {
         if (this.allCount === +this.defaultCount) {
           clearInterval(this.allInterval);
